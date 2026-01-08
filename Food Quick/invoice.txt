@@ -1,0 +1,24 @@
+Order number: 8632
+
+=== Customer detail ===
+Customer: Christo
+Email: dfsg
+Phone number: 43534
+Address: 7 LEyds
+Location: Secunda
+
+=== Your order ===
+You have ordered the following from dfg in Secunda:
+4 x pizza (R100,00)
+2 x Burger (R80,00)
+Total: R560,00
+
+Special instructions: no
+
+=== Detail for collection ===
+Janco Swanepoel is nearest to the restaurant and will deliver your order to:
+7 LEyds
+Secunda
+If you need to contact the restaurant, their number is 436.
+Thank you for your order.
+Have a nice day!
