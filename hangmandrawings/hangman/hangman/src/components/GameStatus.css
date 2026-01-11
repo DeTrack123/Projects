@@ -1,0 +1,132 @@
+/* Styling for GameStatus Component */
+
+.game-status {
+  text-align: center;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Different styles for different game states */
+
+/* Playing state - default instructions */
+.game-status.playing {
+  background: linear-gradient(145deg, #3498db, #2c3d47);
+  color: white;
+}
+
+.game-status.playing h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.game-status.playing .instructions {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Won state - celebration! */
+.game-status.won {
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
+  color: white;
+}
+
+.game-status.won h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  animation: bounce 1s infinite;
+}
+
+/* Lost state - game over */
+.game-status.lost {
+  background: linear-gradient(145deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+.game-status.lost h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+/* Message styling */
+.message {
+  font-size: 1.3em;
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.message strong {
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Play Again button */
+.play-again-btn {
+  background: white;
+  color: #2c3e50;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.play-again-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.play-again-btn:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .game-status {
+    padding: 20px;
+    margin: 15px;
+  }
+  
+  .game-status h2 {
+    font-size: 2em;
+  }
+  
+  .message {
+    font-size: 1.1em;
+  }
+  
+  .play-again-btn {
+    padding: 12px 30px;
+    font-size: 1em;
+  }
+}

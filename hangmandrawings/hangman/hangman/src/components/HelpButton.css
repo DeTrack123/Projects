@@ -1,0 +1,189 @@
+/* Styling for HelpButton Component */
+
+/* Help button - fixed position in corner */
+.help-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.help-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(52, 152, 219, 0.4);
+}
+
+.help-button:active {
+  transform: translateY(0);
+}
+
+/* Modal overlay - covers entire screen */
+.help-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Modal content box */
+.help-modal {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Close button (X) */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.8em;
+  color: #95a5a6;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: #ecf0f1;
+  color: #e74c3c;
+}
+
+/* Modal heading */
+.help-modal h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* Help content sections */
+.help-content {
+  color: #34495e;
+  line-height: 1.8;
+}
+
+.help-content section {
+  margin-bottom: 25px;
+}
+
+.help-content h3 {
+  color: #3498db;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.help-content ul {
+  list-style-position: inside;
+  padding-left: 10px;
+}
+
+.help-content li {
+  margin-bottom: 8px;
+  font-size: 1em;
+}
+
+.help-content strong {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Got it button */
+.got-it-button {
+  width: 100%;
+  background: linear-gradient(145deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.got-it-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(46, 204, 113, 0.4);
+}
+
+.got-it-button:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .help-modal {
+    max-width: 90%;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .help-modal h2 {
+    font-size: 1.5em;
+  }
+  
+  .help-content h3 {
+    font-size: 1.1em;
+  }
+  
+  .help-button {
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}

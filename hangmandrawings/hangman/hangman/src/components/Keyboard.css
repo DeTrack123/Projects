@@ -1,0 +1,37 @@
+/* Styling for Keyboard Component */
+
+.keyboard {
+  text-align: center;
+  margin: 30px auto;
+  max-width: 600px;
+  padding: 20px;
+  background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard h3 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+}
+
+.keyboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .keyboard {
+    max-width: 100%;
+    padding: 15px;
+  }
+  
+  .keyboard h3 {
+    font-size: 1.1em;
+  }
+}

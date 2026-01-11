@@ -1,0 +1,48 @@
+/* Styling for WordDisplay Component */
+
+.word-display {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.word-display h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.letters-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.letter-box {
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  text-align: center;
+}
+
+/* Animation when letter is revealed */
+.letter-box {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
