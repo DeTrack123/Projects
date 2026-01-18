@@ -1,0 +1,58 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 2rem;;
+}
+
+.header-logo {
+  display: flex;
+  align-items: first baseline;
+}
+
+.logo-image {
+  height: 100px;
+  width: auto;
+  padding: 0.25rem;
+}
+
+.header-title {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Top-left positioning for auth pages */
+.header-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background: transparent;
+  z-index: 10;
+}
+
+.header-top-left .logo-image {
+  height: 200px;
+  border-radius: 8px;
+}
+
+.header-top-left .header-title {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0.75rem 1rem;
+    gap: 1rem;
+  }
+
+  .header-title {
+    font-size: 1.3rem;
+  }
+
+  .header-top-left .logo-image {
+    height: 60px;
+  }
+}
