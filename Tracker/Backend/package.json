@@ -1,0 +1,28 @@
+{
+  "name": "project-tracker-backend",
+  "version": "1.0.0",
+  "description": "Express backend for Project Tracker application",
+  "main": "express/server.js",
+  "scripts": {
+    "start": "node express/server.js",
+    "dev": "nodemon express/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "api",
+    "project",
+    "tracker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "dotenv": "17.2.3",
+    "express": "5.2.1",
+    "mongoose": "9.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.11"
+  }
+}
